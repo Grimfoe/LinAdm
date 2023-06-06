@@ -1,0 +1,171 @@
+Script started on 2023-06-06 12:38:19+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;grimfoe@grimfoe-VM: ~/Desktop/Vagrant/systemd[01;32mgrimfoe@grimfoe-VM[00m:[01;34m~/Desktop/Vagrant/systemd[00m$ vagrant ssh systemd
+[?2004l[?2004h]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ [K]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ [K]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ cat /etc/syscio[K[Konfig/watchlog
+[?2004lcat: /etc/sysconfig/watchlog: No such file or directory
+[?2004h]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ sudo apt install logwatch
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 84%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libdate-manip-perl postfix ssl-cert
+Suggested packages:
+  libsys-cpu-perl libsys-meminfo-perl procmail postfix-mysql postfix-pgsql postfix-ldap
+  postfix-pcre postfix-lmdb postfix-sqlite sasl2-bin | dovecot-common resolvconf
+  postfix-cdb mail-reader postfix-mta-sts-resolver postfix-doc
+The following NEW packages will be installed:
+  libdate-manip-perl logwatch postfix ssl-cert
+0 upgraded, 4 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2587 kB of archives.
+After this operation, 19.3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to mirrors.edge.kernel.org][0m[33m0% [Connected to mirrors.edge.kernel.org (147.75.80.249)][0m[33m0% [Connected to mirrors.edge.kernel.org (147.75.80.249)][0m                                                         Get:1 https://mirrors.edge.kernel.org/ubuntu jammy/main amd64 ssl-cert all 1.1.2 [17.4 kB]
+[33m                                                         0% [1 ssl-cert 0 B/17.4 kB 0%][0m[33m                              6% [Working][0m            Get:2 https://mirrors.edge.kernel.org/ubuntu jammy/main amd64 postfix amd64 3.6.4-1ubuntu1 [1245 kB]
+[33m6% [2 postfix 0 B/1245 kB 0%][0m[33m9% [2 postfix 97.9 kB/1245 kB 8%][0m[33m12% [2 postfix 213 kB/1245 kB 17%]                                      38.3 kB/s 1min 1s[0m[33m16% [2 postfix 327 kB/1245 kB 26%]                                          38.3 kB/s 58s[0m[33m19% [2 postfix 442 kB/1245 kB 35%]                                          38.3 kB/s 55s[0m[33m23% [2 postfix 573 kB/1245 kB 46%]                                          38.3 kB/s 52s[0m[33m28% [2 postfix 720 kB/1245 kB 58%]                                          38.3 kB/s 48s[0m[33m33% [2 postfix 884 kB/1245 kB 71%]                                          38.3 kB/s 43s[0m[33m38% [2 postfix 1048 kB/1245 kB 84%]                                         38.3 kB/s 39s[0m[33m43% [2 postfix 1212 kB/1245 kB 97%]                                         38.3 kB/s 35s[0m[33m49% [Working]                                                               38.3 kB/s 34s[0m                                                                                         Get:3 https://mirrors.edge.kernel.org/ubuntu jammy/main amd64 libdate-manip-perl all 6.86-1 [946 kB]
+[33m49% [3 libdate-manip-perl 0 B/946 kB 0%]                                    38.3 kB/s 34s[0m[33m56% [3 libdate-manip-perl 213 kB/946 kB 22%]                                38.3 kB/s 29s[0m[33m63% [3 libdate-manip-perl 458 kB/946 kB 48%]                                38.3 kB/s 22s[0m[33m71% [3 libdate-manip-perl 720 kB/946 kB 76%]                                38.3 kB/s 15s[0m[33m83% [Working]                                                                38.3 kB/s 9s[0m                                                                                         Get:4 https://mirrors.edge.kernel.org/ubuntu jammy/main amd64 logwatch all 7.5.6-1ubuntu1 [378 kB]
+[33m83% [4 logwatch 0 B/378 kB 0%]                                               38.3 kB/s 9s[0m[33m92% [4 logwatch 278 kB/378 kB 74%]                                            372 kB/s 0s[0m[33m100% [Working]                                                                372 kB/s 0s[0m                                                                                         Fetched 2587 kB in 12s (211 kB/s)
+Preconfiguring packages ...
+[?1049h[22;0;0t[1;46r[4l[?25l(B[m[37m[40m[1;46r[H[2J[1;1H[97m[45m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[37mPackage configuration[9;5H[30m[47m┌───────────────────────────┤ [31mPostfix Configuration[30m ├───────────────────────────┐[10;5H│ Please select the mail server configuration type that best meets your needs.  │[97m[40m [11;5H[30m[47m│                                                                               │[97m[40m [12;5H[30m[47m│  No configuration:                                                            │[97m[40m [13;5H[30m[47m│   Should be chosen to leave the current configuration unchanged.              │[97m[40m [14;5H[30m[47m│  Internet site:                                                               │[97m[40m [15;5H[30m[47m│   Mail is sent and received directly using SMTP.                              │[97m[40m [16;5H[30m[47m│  Internet with smarthost:                                                     │[97m[40m [17;5H[30m[47m│   Mail is received directly using SMTP or by running a utility such           │[97m[40m [18;5H[30m[47m│   as fetchmail. Outgoing mail is sent using a smarthost.                      │[97m[40m [19;5H[30m[47m│  Satellite system:                                                            │[97m[40m [20;5H[30m[47m│   All mail is sent to another machine, called a 'smarthost', for              │[97m[40m [21;5H[30m[47m│   delivery.                                                                   │[97m[40m [22;5H[30m[47m│  Local only:                                                                  │[97m[40m [23;5H[30m[47m│   The only delivered mail is the mail for local users. There is no            │[97m[40m [24;5H[30m[47m│   network.                                                                    │[97m[40m [25;5H[30m[47m│                                                                               │[97m[40m [26;5H[30m[47m│ General mail configuration type:                                              │[97m[40m [27;5H[30m[47m│                                                                               │[97m[40m [28;5H[30m[47m│                           No configuration                                    │[97m[40m [29;5H[30m[47m│                           [37m[41mInternet Site           [30m[47m                            │[97m[40m [30;5H[30m[47m│                           Internet with smarthost                             │[97m[40m [31;5H[30m[47m│                           Satellite system                                    │[97m[40m [32;5H[30m[47m│                           Local only                                          │[97m[40m [33;5H[30m[47m│                                                                               │[97m[40m [34;5H[30m[47m│                                                                               │[97m[40m [35;5H[30m[47m│                     <Ok>                         <Cancel>                     │[97m[40m [36;5H[30m[47m│                                                                               │[97m[40m [37;5H[30m[47m└───────────────────────────────────────────────────────────────────────────────┘[97m[40m [38;6H                                                                                 [29;33H[30m[47mInternet Site           [30;33H[37m[41mInternet with smarthost [30;33H[30m[47mInternet with smarthost [31;33H[37m[41mSatellite system        [31;33H[30m[47mSatellite system        [32;33H[37m[41mLocal only              [32;33H[?12l[?25h[46;1H[40m(B[m[39;49m[K[?1049l[23;0;0t[?1049h[22;0;0t[1;46r[4l[?25l(B[m[37m[40m[1;46r[H[2J[1;1H[97m[45m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[?25l[?12l[?25h[37mPackage configuration[14;2H[30m[47m┌──────────────────────────────┤ [31mPostfix Configuration[30m ├──────────────────────────────┐[15;2H│ The 'mail name' is the domain name used to 'qualify' _ALL_ mail addresses without   │[97m[40m [16;2H[30m[47m│ a domain name. This includes mail to and from <root>: please do not make your       │[97m[40m [17;2H[30m[47m│ machine send out mail from root@example.org unless root@example.org has told you    │[97m[40m [18;2H[30m[47m│ to.                                                                                 │[97m[40m [19;2H[30m[47m│                                                                                     │[97m[40m [20;2H[30m[47m│ This name will also be used by other programs. It should be the single, fully       │[97m[40m [21;2H[30m[47m│ qualified domain name (FQDN).                                                       │[97m[40m [22;2H[30m[47m│                                                                                     │[97m[40m [23;2H[30m[47m│ Thus, if a mail address on the local host is foo@example.org, the correct value     │[97m[40m [24;2H[30m[47m│ for this option would be example.org.                                               │[97m[40m [25;2H[30m[47m│                                                                                     │[97m[40m [26;2H[30m[47m│ System mail name:                                                                   │[97m[40m [27;2H[30m[47m│                                                                                     │[97m[40m [28;2H[30m[47m│ [37m[45msystemd____________________________________________________________________________[30m[47m │[97m[40m [29;2H[30m[47m│                                                                                     │[97m[40m [30;2H[30m[47m│                       <Ok>                           <Cancel>                       │[97m[40m [31;2H[30m[47m│                                                                                     │[97m[40m [32;2H[30m[47m└─────────────────────────────────────────────────────────────────────────────────────┘[97m[40m [33;3H                                                                                       [28;11H[?25l[30;26H[37m[41m<Ok>[30;27H[?12l[?25h[46;1H[40m(B[m[39;49m[K[?1049l[23;0;0t
+7[0;45r8[1ASelecting previously unselected package ssl-cert.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 75812 files and directories currently installed.)
+Preparing to unpack .../ssl-cert_1.1.2_all.deb ...
+7[46;0f[42m[30mProgress: [  0%][49m[39m [....................................................................] 87[46;0f[42m[30mProgress: [  6%][49m[39m [####................................................................] 8Unpacking ssl-cert (1.1.2) ...
+7[46;0f[42m[30mProgress: [ 12%][49m[39m [########............................................................] 8Selecting previously unselected package postfix.
+Preparing to unpack .../postfix_3.6.4-1ubuntu1_amd64.deb ...
+7[46;0f[42m[30mProgress: [ 18%][49m[39m [###########.........................................................] 8Unpacking postfix (3.6.4-1ubuntu1) ...
+7[46;0f[42m[30mProgress: [ 24%][49m[39m [################....................................................] 8Selecting previously unselected package libdate-manip-perl.
+Preparing to unpack .../libdate-manip-perl_6.86-1_all.deb ...
+7[46;0f[42m[30mProgress: [ 29%][49m[39m [###################.................................................] 8Unpacking libdate-manip-perl (6.86-1) ...
+7[46;0f[42m[30mProgress: [ 35%][49m[39m [#######################.............................................] 8Selecting previously unselected package logwatch.
+Preparing to unpack .../logwatch_7.5.6-1ubuntu1_all.deb ...
+7[46;0f[42m[30mProgress: [ 41%][49m[39m [############################........................................] 8Unpacking logwatch (7.5.6-1ubuntu1) ...
+7[46;0f[42m[30mProgress: [ 47%][49m[39m [################################....................................] 8Setting up ssl-cert (1.1.2) ...
+7[46;0f[42m[30mProgress: [ 53%][49m[39m [####################################................................] 87[46;0f[42m[30mProgress: [ 59%][49m[39m [#######################################.............................] 8Setting up postfix (3.6.4-1ubuntu1) ...
+7[46;0f[42m[30mProgress: [ 65%][49m[39m [###########################################.........................] 8Adding group `postfix' (GID 123) ...
+Done.
+Adding system user `postfix' (UID 114) ...
+Adding new user `postfix' (UID 114) with group `postfix' ...
+Not creating home directory `/var/spool/postfix'.
+Creating /etc/postfix/dynamicmaps.cf
+Adding group `postdrop' (GID 124) ...
+Done.
+setting myhostname: systemd
+setting alias maps
+setting alias database
+mailname is not a fully qualified domain name.  Not changing /etc/mailname.
+setting destinations: $myhostname, systemd, localhost.localdomain, localhost
+setting relayhost: 
+setting mynetworks: 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+setting mailbox_size_limit: 0
+setting recipient_delimiter: +
+setting inet_interfaces: loopback-only
+setting default_transport: error
+setting relay_transport: error
+setting inet_protocols: all
+/etc/aliases does not exist, creating it.
+WARNING: /etc/aliases exists, but does not have a root alias.
+
+Postfix (main.cf) is now set up with a default configuration.  If you need to 
+make changes, edit /etc/postfix/main.cf (and others) as needed.  To view 
+Postfix configuration values, see postconf(1).
+
+After modifying main.cf, be sure to run 'systemctl reload postfix'.
+
+Running newaliases
+Created symlink /etc/systemd/system/multi-user.target.wants/postfix.service → /lib/systemd/system/postfix.service.
+7[46;0f[42m[30mProgress: [ 71%][49m[39m [###############################################.....................] 8Setting up libdate-manip-perl (6.86-1) ...
+7[46;0f[42m[30mProgress: [ 76%][49m[39m [####################################################................] 87[46;0f[42m[30mProgress: [ 82%][49m[39m [########################################################............] 8Setting up logwatch (7.5.6-1ubuntu1) ...
+7[46;0f[42m[30mProgress: [ 88%][49m[39m [###########################################################.........] 87[46;0f[42m[30mProgress: [ 94%][49m[39m [################################################################....] 8Processing triggers for ufw (0.36.1-4build1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for rsyslog (8.2112.0-2ubuntu2.2) ...
+
+7[0;46r8[1A[JScanning processes... [                                                                  ]Scanning processes... [                                                                  ]Scanning processes... [=                                                                 ]Scanning processes... [=                                                                 ]Scanning processes... [==                                                                ]Scanning processes... [==                                                                ]Scanning processes... [===                                                               ]Scanning processes... [===                                                               ]Scanning processes... [====                                                              ]Scanning processes... [====                                                              ]Scanning processes... [=====                                                             ]Scanning processes... [=====                                                             ]Scanning processes... [======                                                            ]Scanning processes... [======                                                            ]Scanning processes... [=======                                                           ]Scanning processes... [=======                                                           ]Scanning processes... [========                                                          ]Scanning processes... [========                                                          ]Scanning processes... [=========                                                         ]Scanning processes... [=========                                                         ]Scanning processes... [==========                                                        ]Scanning processes... [==========                                                        ]Scanning processes... [===========                                                       ]Scanning processes... [===========                                                       ]Scanning processes... [============                                                      ]Scanning processes... [============                                                      ]Scanning processes... [=============                                                     ]Scanning processes... [=============                                                     ]Scanning processes... [==============                                                    ]Scanning processes... [==============                                                    ]Scanning processes... [===============                                                   ]Scanning processes... [===============                                                   ]Scanning processes... [================                                                  ]Scanning processes... [=================                                                 ]Scanning processes... [=================                                                 ]Scanning processes... [==================                                                ]Scanning processes... [==================                                                ]Scanning processes... [===================                                               ]Scanning processes... [===================                                               ]Scanning processes... [====================                                              ]Scanning processes... [====================                                              ]Scanning processes... [=====================                                             ]Scanning processes... [=====================                                             ]Scanning processes... [======================                                            ]Scanning processes... [======================                                            ]Scanning processes... [=======================                                           ]Scanning processes... [=======================                                           ]Scanning processes... [========================                                          ]Scanning processes... [========================                                          ]Scanning processes... [=========================                                         ]Scanning processes... [=========================                                         ]Scanning processes... [==========================                                        ]Scanning processes... [==========================                                        ]Scanning processes... [===========================                                       ]Scanning processes... [===========================                                       ]Scanning processes... [============================                                      ]Scanning processes... [============================                                      ]Scanning processes... [=============================                                     ]Scanning processes... [=============================                                     ]Scanning processes... [==============================                                    ]Scanning processes... [==============================                                    ]Scanning processes... [===============================                                   ]Scanning processes... [===============================                                   ]Scanning processes... [================================                                  ]Scanning processes... [=================================                                 ]Scanning processes... [=================================                                 ]Scanning processes... [==================================                                ]Scanning processes... [==================================                                ]Scanning processes... [===================================                               ]Scanning processes... [===================================                               ]Scanning processes... [====================================                              ]Scanning processes... [====================================                              ]Scanning processes... [=====================================                             ]Scanning processes... [=====================================                             ]Scanning processes... [======================================                            ]Scanning processes... [======================================                            ]Scanning processes... [=======================================                           ]Scanning processes... [=======================================                           ]Scanning processes... [========================================                          ]Scanning processes... [========================================                          ]Scanning processes... [=========================================                         ]Scanning processes... [=========================================                         ]Scanning processes... [==========================================                        ]Scanning processes... [==========================================                        ]Scanning processes... [===========================================                       ]Scanning processes... [===========================================                       ]Scanning processes... [============================================                      ]Scanning processes... [============================================                      ]Scanning processes... [=============================================                     ]Scanning processes... [=============================================                     ]Scanning processes... [==============================================                    ]Scanning processes... [==============================================                    ]Scanning processes... [===============================================                   ]Scanning processes... [===============================================                   ]Scanning processes... [================================================                  ]Scanning processes... [================================================                  ]Scanning processes... [=================================================                 ]Scanning processes... [==================================================                ]Scanning processes... [==================================================                ]Scanning processes... [===================================================               ]Scanning processes... [===================================================               ]Scanning processes... [====================================================              ]Scanning processes... [====================================================              ]Scanning processes... [=====================================================             ]Scanning processes... [=====================================================             ]Scanning processes... [======================================================            ]Scanning processes... [======================================================            ]Scanning processes... [=======================================================           ]Scanning processes... [=======================================================           ]Scanning processes... [========================================================          ]Scanning processes... [========================================================          ]Scanning processes... [=========================================================         ]Scanning processes... [=========================================================         ]Scanning processes... [==========================================================        ]Scanning processes... [==========================================================        ]Scanning processes... [===========================================================       ]Scanning processes... [===========================================================       ]Scanning processes... [============================================================      ]Scanning processes... [============================================================      ]Scanning processes... [=============================================================     ]Scanning processes... [=============================================================     ]Scanning processes... [==============================================================    ]Scanning processes... [==============================================================    ]Scanning processes... [===============================================================   ]Scanning processes... [===============================================================   ]Scanning processes... [================================================================  ]Scanning processes... [================================================================  ]Scanning processes... [================================================================= ]S
