@@ -1,0 +1,338 @@
+Script started on 2023-06-06 14:54:26+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="90" LINES="46"]
+[?2004h]0;grimfoe@grimfoe-VM: ~/Desktop/Vagrant/systemd[01;32mgrimfoe@grimfoe-VM[00m:[01;34m~/Desktop/Vagrant/systemd[00m$ vagrant ssh systemd
+[?2004l[?2004h]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ sudo -i
+[?2004l[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# cat /etc/watchlog
+[?2004lcat: /etc/watchlog: No such file or directory
+[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# cd[K[Kvi /ec[K[K[K[K[K[Knano /etc watchl[K[K[K[K[K[K[K/watchlog
+[?2004l[?2004h[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;40H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                           /etc/watchlog                                    [1;89H(B[m[45d(B[0;7m^G(B[m Help[45;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[45;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[46d(B[0;7m^X(B[m Exit[46;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;56H(B[0;7m*[44d(B[m[K[1;89H[2d[36m# Configuration file for my watchlog service[3d# Place it to /etc/sysconfig[5d# File and word in that file that we will be monit[6d[39m(B[mWORD="ALERT"[7dLOG=/var/log/watchlog.log[8d[?12l[?25h[?25l[45;16H       (B[0;7mM-D(B[m DOS Format        (B[0;7mM-A(B[m Append[61G      (B[0;7mM-B(B[m Backup File[K[46;2H(B[0;7mC(B[m Cancel[16G       (B[0;7mM-M(B[m Mac Format        (B[0;7mM-P(B[m Prepend           (B[0;7m^T(B[m Browse[K[44d(B[0;7mFile Name to Write: /etc/watchlog                                                         [44;34H(B[m[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;56H(B[0;7m [89G(B[m[44;37H(B[0;7m[ Wrote 6 lines ](B[m[45;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut   [61G(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[46;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[8d[?25l[44d[J[46d[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# vi /var/log/watchlog.log
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"/var/log/watchlog.log" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [25;1H~                                                                                         [26;1H~                                                                                         [27;1H~                                                                                         [28;1H~                                                                                         [29;1H~                                                                                         [30;1H~                                                                                         [31;1H~                                                                                         [32;1H~                                                                                         [33;1H~                                                                                         [34;1H~                                                                                         [35;1H~                                                                                         [36;1H~                                                                                         [37;1H~                                                                                         [38;1H~                                                                                         [39;1H~                                                                                         [40;1H~                                                                                         [41;1H~                                                                                         [42;1H~                                                                                         [43;1H~                                                                                         [44;1H~                                                                                         [45;1H~                                                                                         [m[46;73H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[46;1H[1m-- INSERT --[m[46;13H[K[46;73H0,1[11CAll[1;1H[?25h[?25lt[46;73H1,2[1;2H[?25h[?25le[46;75H3[1;3H[?25h[?25ls[46;75H4[1;4H[?25h[?25lt[46;75H5[1;5H[?25h[?25l[2;1H[K[46;73H2,1[2;1H[?25h[?25lt[46;75H2[2;2H[?25h[?25ls[46;75H3[2;3H[?25h[?25l[2;2H[K[46;75H2[2;2H[?25h[?25le[46;75H3[2;3H[?25h[?25lt[46;75H4[2;4H[?25h[?25lt[46;75H5[2;5H[?25h[?25ls[46;75H6[2;6H[?25h[?25l1[46;75H7[2;7H[?25h[?25l[3;1H[K[46;73H3,1[3;1H[?25h[?25ls[46;75H2[3;2H[?25h[?25lg[46;75H3[3;3H[?25h[?25l3[46;75H4[3;4H[?25h[?25l[4;1H[K[46;73H4,1[4;1H[?25h[?25la[46;75H2[4;2H[?25h[?25ls[46;75H3[4;3H[?25h[?25lf[46;75H4[4;4H[?25h[?25l4[46;75H5[4;5H[?25h[?25l[5;1H[K[46;73H5,1[5;1H[?25h[?25la[46;75H2[5;2H[?25h[?25lsdf[46;75H5[5;5H[?25h[?25lg[46;75H6[5;6H[?25h[?25l45[46;75H8[5;8H[?25h[?25l[6;1H[K[46;73H6,1[6;1H[?25h[?25lA[46;75H2[6;2H[?25h[?25lL[46;75H3[6;3H[?25h[?25lE[46;75H4[6;4H[?25h[?25lT[46;75H5[6;5H[?25h[?25l[6;4H[K[46;75H4[6;4H[?25h[?25lR[46;75H5[6;5H[?25h[?25lT[46;75H6[6;6H[?25h[?25l[7;1H[K[46;73H7,1[7;1H[?25h[?25ls[46;75H2[7;2H[?25h[?25la[46;75H3[7;3H[?25h[?25ld[46;75H4[7;4H[?25h[?25lf[46;75H5[7;5H[?25h[?25l[8;1H[K[46;73H8,1[8;1H[?25h[?25ls[46;75H2[8;2H[?25h[?25ld[46;75H3[8;3H[?25h[?25lf[46;75H4[8;4H[?25h[?25l[9;1H[K[46;73H9,1[9;1H[?25h[?25ls[46;75H2[9;2H[?25h[?25ldf[46;75H4[9;4H[?25h[?25lg[46;75H5[9;5H[?25h[?25l[10;1H[K[46;73H10,1[10;1H[?25h[?25ld[46;76H2[10;2H[?25h[?25lf[46;76H3[10;3H[?25h[?25lg[46;76H4[10;4H[?25h[?25l[11;1H[K[46;74H1,1[11;1H[?25h[?25ld[46;76H2[11;2H[?25h[?25lf[46;76H3[11;3H[?25h[?25lg[46;76H4[11;4H[?25h[?25ld[46;76H5[11;5H[?25h[?25lf[46;76H6[11;6H[?25h[?25lg[46;76H7[11;7H[?25h[?25l[12;1H[K[46;74H2,1[12;1H[?25h[?25l[46;1H[K[46;73H12,0-1[8CAll[12;1H[?25h[?25l[46;73H[K[46;1H:[?25hwq[?25l[?2004l[>4;m"/var/log/watchlog.log" [New] 12L, 61B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# vi /opt/watchlog.sh
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"/opt/watchlog.sh" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [25;1H~                                                                                         [26;1H~                                                                                         [27;1H~                                                                                         [28;1H~                                                                                         [29;1H~                                                                                         [30;1H~                                                                                         [31;1H~                                                                                         [32;1H~                                                                                         [33;1H~                                                                                         [34;1H~                                                                                         [35;1H~                                                                                         [36;1H~                                                                                         [37;1H~                                                                                         [38;1H~                                                                                         [39;1H~                                                                                         [40;1H~                                                                                         [41;1H~                                                                                         [42;1H~                                                                                         [43;1H~                                                                                         [44;1H~                                                                                         [45;1H~                                                                                         [m[46;73H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[46;1H[97m[41mE348: No string under cursor[m[46;73H[K[46;73H0,0-1[9CAll[1;1H[?25h[?25l[46;1H[K[46;1H/[?25hbin[?25l[46;4H[K[46;4H[?25h[?25l[46;3H[K[46;3H[?25h[?25l[46;2H[K[46;2H[?25h [?25l[71C0,0-1[9CAll[1;1H[?25h[?25l[46;1H[1m-- INSERT --[m[46;73H[K[46;73H0,1[11CAll[1;1H[?25h[?25l[34m#[m[46;73H1,2[1;2H[?25h[?25l[34m![m[46;75H3[1;3H[?25h[?25l[34m/[m[46;75H4[1;4H[?25h[?25l[34mb[m[46;75H5[1;5H[?25h[?25l[34mi[m[46;75H6[1;6H[?25h[?25l[34mn[m[46;75H7[1;7H[?25h[?25l[34m/[m[46;75H8[1;8H[?25h[?25l[34mb[m[46;75H9[1;9H[?25h[?25l[34ma[m[46;75H10[1;10H[?25h[?25l[34ms[m[46;76H1[1;11H[?25h[?25l[34mh[m[46;76H2[1;12H[?25h[?25l[2;1H[K[46;73H2,1 [2;1H[?25h[?25lW[46;75H2[2;2H[?25h[?25lO[46;75H3[2;3H[?25h[?25lR[46;75H4[2;4H[?25h[?25lD[46;75H5[2;5H[?25h[?25l[36mWORD[m=[46;75H6[2;6H[?25h[?25l$[46;75H7[2;7H[?25h[?25l[35m$1[m[46;75H8[2;8H[?25h[?25l[3;1H[K[46;73H3,1[3;1H[?25h[?25lL[46;75H2[3;2H[?25h[?25lO[46;75H3[3;3H[?25h[?25lG[46;75H4[3;4H[?25h[?25l[36mLOG[m=[46;75H5[3;5H[?25h[?25l$[46;75H6[3;6H[?25h[?25l[35m$2[m[46;75H7[3;7H[?25h[?25l[4;1H[K[46;73H4,1[4;1H[?25h[?25lD[46;75H2[4;2H[?25h[?25lA[46;75H3[4;3H[?25h[?25lT[46;75H4[4;4H[?25h[?25lE[46;75H5[4;5H[?25h[?25l[36mDATE[m=[46;75H6[4;6H[?25h[?25l[38;5;130m'[m[46;75H7[4;7H[?25h[?25l[38;5;130m'[m[46;75H8[4;8H[?25h[?25l[46;75H7[4;7H[?25h[?25l[31md[m[38;5;130m'[m[46;75H8[4;8H[?25h[?25l[31ma[m[38;5;130m'[m[46;75H9[4;9H[?25h[?25l[31mt[m[38;5;130m'[m[46;75H10[4;10H[?25h[?25l[31me[m[38;5;130m'[m[46;76H1[4;11H[?25h[?25l[46;76H2[4;12H[?25h[?25l[5;1H[K[46;73H5,1 [5;1H[?25h[?25li[46;75H2[5;2H[?25h[?25l[38;5;130mif[m[46;75H3[5;3H[?25h[?25l[38;5;130m [m[46;75H4[5;4H[?25h[?25lg[46;75H5[5;5H[?25h[?25lr[46;75H6[5;6H[?25h[?25le[46;75H7[5;7H[?25h[?25l[38;5;130mgrep[m[46;75H8[5;8H[?25h[?25l[46;75H9[5;9H[?25h[?25l$[46;75H10[5;10H[?25h[?25l[35m$W[m[46;76H1[5;11H[?25h[?25l[35mO[m[46;76H2[5;12H[?25h[?25l[35mR[m[46;76H3[5;13H[?25h[?25l[35mD[m[46;76H4[5;14H[?25h[?25l[46;76H5[5;15H[?25h[?25l$[46;76H6[5;16H[?25h[?25l[35m$L[m[46;76H7[5;17H[?25h[?25l[35mO[m[46;76H8[5;18H[?25h[?25l[35mG[m[46;76H9[5;19H[?25h[?25l[46;75H20[5;20H[?25h[?25l[38;5;130m&[m[46;76H1[5;21H[?25h[?25l[38;5;130m>[m[46;76H2[5;22H[?25h[?25l[46;76H3[5;23H[?25h[?25l/[46;76H4[5;24H[?25h[?25ld[46;76H5[5;25H[?25h[?25le[46;76H6[5;26H[?25h[?25lv[46;76H7[5;27H[?25h[?25l/[46;76H8[5;28H[?25h[?25ln[46;76H9[5;29H[?25h[?25lu[46;75H30[5;30H[?25h[?25ll[46;76H1[5;31H[?25h[?25ll[46;76H2[5;32H[?25h[?25l[6;1H[K[46;73H6,1 [6;1H[?25h[?25lt[46;75H2[6;2H[?25h[?25lh[46;75H3[6;3H[?25h[?25le[46;75H4[6;4H[?25h[?25l[38;5;130mthen[m[46;75H5[6;5H[?25h[?25l[7;1H[K[46;73H7,1[7;1H[?25h[?25ll[46;75H2[7;2H[?25h[?25lo[46;75H3[7;3H[?25h[?25lg[46;75H4[7;4H[?25h[?25lg[46;75H5[7;5H[?25h[?25le[46;75H6[7;6H[?25h[?25lr[46;75H7[7;7H[?25h[?25l[46;75H8[7;8H[?25h[?25l$[46;75H9[7;9H[?25h[?25l[35m$D[m[46;75H10[7;10H[?25h[?25l[35mA[m[46;76H1[7;11H[?25h[?25l[35mT[m[46;76H2[7;12H[?25h[?25l[35mE[m[46;76H3[7;13H[?25h[?25l:[46;76H4[7;14H[?25h[?25l[46;76H5[7;15H[?25h[?25lW[46;76H6[7;16H[?25h[?25lO[46;76H7[7;17H[?25h[?25lr[46;76H8[7;18H[?25h[?25ld[46;76H9[7;19H[?25h[?25l[7;18H[K[46;76H8[7;18H[?25h[?25l[7;17H[K[46;76H7[7;17H[?25h[?25l[7;16H[K[46;76H6[7;16H[?25h[?25lo[46;76H7[7;17H[?25h[?25lr[46;76H8[7;18H[?25h[?25ld[46;76H9[7;19H[?25h[?25l[46;75H20[7;20H[?25h[?25lf[46;76H1[7;21H[?25h[?25lo[46;76H2[7;22H[?25h[?25lu[46;76H3[7;23H[?25h[?25ln[46;76H4[7;24H[?25h[?25ld[46;76H5[7;25H[?25h[?25l@[38;5;130m![m[46;76H7[7;27H[?25h[?25l[7;26H[K[46;76H6[7;26H[?25h[?25l[7;25H[K[46;76H5[7;25H[?25h[?25l[38;5;130m![m[46;76H6[7;26H[?25h[?25l[38;5;130m"[m[46;76H7[7;27H[?25h[?25l[46;76H6[7;26H[?25h[?25l[46;76H5[7;25H[?25h[?25l[46;76H4[7;24H[?25h[?25l[46;76H3[7;23H[?25h[?25l[46;76H2[7;22H[?25h[?25l[46;76H1[7;21H[?25h[?25l[46;76H0[7;20H[?25h[?25l[46;75H19[7;19H[?25h[?25l[46;76H8[7;18H[?25h[?25l[46;76H7[7;17H[?25h[?25l[46;76H6[7;16H[?25h[?25l[46;76H5[7;15H[?25h[?25l[46;76H4[7;14H[?25h[?25l[46;76H3[7;13H[?25h[?25l[46;76H2[7;12H[?25h[?25l[46;76H1[7;11H[?25h[?25l[46;76H0[7;10H[?25h[?25l[46;75H9 [7;9H[?25h[?25l[46;75H8[7;8H[?25h[?25l[38;5;130m"[m[35m$DATE[m[31m: Word found![m[38;5;130m"[m[46;75H9[7;9H[?25h[?25l[46;75H10[7;10H[?25h[?25l[46;76H1[7;11H[?25h[?25l[46;76H2[7;12H[?25h[?25l[46;76H3[7;13H[?25h[?25l[46;76H4[7;14H[?25h[?25l[46;76H5[7;15H[?25h[?25l[46;76H6[7;16H[?25h[?25l[46;76H7[7;17H[?25h[?25l[46;76H8[7;18H[?25h[?25l[46;76H9[7;19H[?25h[?25l[46;75H20[7;20H[?25h[?25l[46;76H1[7;21H[?25h[?25l[46;76H2[7;22H[?25h[?25l[46;76H3[7;23H[?25h[?25l[46;76H4[7;24H[?25h[?25l[46;76H5[7;25H[?25h[?25l[46;76H6[7;26H[?25h[?25l[46;76H7[7;27H[?25h[?25l[46;76H8[7;28H[?25h[?25l[8;1H[K[46;73H8,1 [8;1H[?25h[?25le[46;75H2[8;2H[?25h[?25ll[46;75H3[8;3H[?25h[?25ls[46;75H4[8;4H[?25h[?25l[38;5;130melse[m[46;75H5[8;5H[?25h[?25l[9;1H[K[46;73H9,1[9;1H[?25h[?25le[46;75H2[9;2H[?25h[?25lx[46;75H3[9;3H[?25h[?25li[46;75H4[9;4H[?25h[?25l[38;5;130mexit[m[46;75H5[9;5H[?25h[?25l[46;75H6[9;6H[?25h[?25l[31m0[m[46;75H7[9;7H[?25h[?25l[10;1H[K[46;73H10,1[10;1H[?25h[?25lf[46;76H2[10;2H[?25h[?25l[38;5;130mfi[m[46;76H3[10;3H[?25h[?25l[46;1H[K[46;73H10,2[10CAll[10;2H[?25h[?25l[46;73H[K[46;1H:[?25hwq[?25l[?2004l[>4;m"/opt/watchlog.sh" [New] 10L, 119B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# cvi /opt/watchlog.sh[1P /opt/watchlog.sh[1P /opt/watchlog.shc /opt/watchlog.shh /opt/watchlog.shm /opt/watchlog.sho /opt/watchlog.shd /opt/watchlog.sh[C /opt/watchlog.sh+ /opt/watchlog.shx /opt/watchlog.sh
+[?2004l[?2004h]0;root@systemd: ~[01;32mroot@systemd[00m:[01;34m~[00m# cd /lib/system,[Kd/system/
+[?2004l[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# ls
+[?2004l ModemManager.service                     remote-cryptsetup.target
+ apparmor.service                         remote-fs-pre.target
+ apport-autoreport.path                   remote-fs.target
+ apport-autoreport.service                remote-veritysetup.target
+ apport-autoreport.timer                  rescue-ssh.target
+ apport-forward.socket                    rescue.service
+ apport-forward@.service                  rescue.target
+ apt-daily-upgrade.service                [0m[01;34mrescue.target.wants[0m
+ apt-daily-upgrade.timer                  rpcbind.target
+ apt-daily.service                        rsync.service
+ apt-daily.timer                          rsyslog.service
+ apt-news.service                         [01;36mrunlevel0.target[0m
+ [01;36mautovt@.service[0m                          [01;36mrunlevel1.target[0m
+ basic.target                             [01;34mrunlevel1.target.wants[0m
+ blk-availability.service                 [01;36mrunlevel2.target[0m
+ blockdev@.target                         [01;34mrunlevel2.target.wants[0m
+ bluetooth.target                         [01;36mrunlevel3.target[0m
+ bolt.service                             [01;34mrunlevel3.target.wants[0m
+ boot-complete.target                     [01;36mrunlevel4.target[0m
+ console-getty.service                    [01;34mrunlevel4.target.wants[0m
+ console-setup.service                    [01;36mrunlevel5.target[0m
+ container-getty@.service                 [01;34mrunlevel5.target.wants[0m
+ cron.service                             [01;36mrunlevel6.target[0m
+ [01;36mcryptdisks-early.service[0m                 [01;36mscreen-cleanup.service[0m
+ [01;36mcryptdisks.service[0m                       secureboot-db.service
+ cryptsetup-pre.target                    serial-getty@.service
+ cryptsetup.target                        setvtrgb.service
+ [01;36mctrl-alt-del.target[0m                      shutdown.target
+ [01;36mdbus-org.freedesktop.hostname1.service[0m   sigpwr.target
+ [01;36mdbus-org.freedesktop.locale1.service[0m     sleep.target
+ [01;36mdbus-org.freedesktop.login1.service[0m      slices.target
+ [01;36mdbus-org.freedesktop.timedate1.service[0m   smartcard.target
+ dbus.service                             snapd.aa-prompt-listener.service
+ dbus.socket                              snapd.apparmor.service
+ debug-shell.service                      snapd.autoimport.service
+ [01;36mdefault.target[0m                           snapd.core-fixup.service
+ dev-hugepages.mount                      snapd.failure.service
+ dev-mqueue.mount                         snapd.mounts-pre.target
+ dm-event.service                         snapd.mounts.target
+ dm-event.socket                          snapd.recovery-chooser-trigger.service
+ dmesg.service                            snapd.seeded.service
+ dpkg-db-backup.service                   snapd.service
+ dpkg-db-backup.timer                     snapd.snap-repair.service
+ e2scrub@.service                         snapd.snap-repair.timer
+ e2scrub_all.service                      snapd.socket
+ e2scrub_all.timer                        snapd.system-shutdown.service
+ e2scrub_fail@.service                    sockets.target
+ e2scrub_reap.service                     [01;34msockets.target.wants[0m
+ emergency.service                        sound.target
+ emergency.target                         ssh.service
+ esm-cache.service                        ssh.socket
+ exit.target                              ssh@.service
+ final.target                             suspend-then-hibernate.target
+ finalrd.service                          suspend.target
+ first-boot-complete.target               swap.target
+ friendly-recovery.service                sys-fs-fuse-connections.mount
+ friendly-recovery.target                 sys-kernel-config.mount
+ fstrim.service                           sys-kernel-debug.mount
+ fstrim.timer                             sys-kernel-tracing.mount
+ fwupd-offline-update.service             sysinit.target
+ fwupd-refresh.service                    [01;34msysinit.target.wants[0m
+ fwupd-refresh.timer                      syslog.socket
+ fwupd.service                            sysstat-collect.service
+ getty-pre.target                         sysstat-collect.timer
+ getty-static.service                     sysstat-summary.service
+ getty.target                             sysstat-summary.timer
+ [01;34mgetty.target.wants[0m                       sysstat.service
+ getty@.service                          'system-systemd\x2dcryptsetup.slice'
+ gpu-manager.service                      system-update-cleanup.service
+ graphical.target                         system-update-pre.target
+ [01;34mgraphical.target.wants[0m                   system-update.target
+ grub-common.service                      [01;34msystem-update.target.wants[0m
+ grub-initrd-fallback.service             systemd-ask-password-console.path
+ halt.target                              systemd-ask-password-console.service
+ [01;34mhalt.target.wants[0m                        systemd-ask-password-plymouth.path
+ haveged.service                          systemd-ask-password-plymouth.service
+ hibernate.target                         systemd-ask-password-wall.path
+ hv-fcopy-daemon.service                  systemd-ask-password-wall.service
+ hv-kvp-daemon.service                    systemd-backlight@.service
+ hv-vss-daemon.service                    systemd-binfmt.service
+ [01;36mhwclock.service[0m                          systemd-bless-boot.service
+ hybrid-sleep.target                      systemd-boot-check-no-failures.service
+ ifup@.service                            systemd-boot-system-token.service
+ ifupdown-pre.service                     systemd-exit.service
+ ifupdown-wait-online.service             systemd-fsck-root.service
+ initrd-cleanup.service                   systemd-fsck@.service
+ initrd-fs.target                         systemd-fsckd.service
+ initrd-parse-etc.service                 systemd-fsckd.socket
+ initrd-root-device.target                systemd-halt.service
+ [01;34minitrd-root-device.target.wants[0m          systemd-hibernate-resume@.service
+ initrd-root-fs.target                    systemd-hibernate.service
+ initrd-switch-root.service               systemd-hostnamed.service
+ initrd-switch-root.target                systemd-hybrid-sleep.service
+ [01;34minitrd-switch-root.target.wants[0m          systemd-initctl.service
+ initrd-udevadm-cleanup-db.service        systemd-initctl.socket
+ initrd-usr-fs.target                     systemd-journal-flush.service
+ initrd.target                            systemd-journald-audit.socket
+ intel-sgx-load-module.service            systemd-journald-dev-log.socket
+ irqbalance.service                       systemd-journald-varlink@.socket
+ iscsid.service                           systemd-journald.service
+ iscsid.socket                            systemd-journald.socket
+ kexec.target                             systemd-journald@.service
+ [01;34mkexec.target.wants[0m                       systemd-journald@.socket
+ keyboard-setup.service                   systemd-kexec.service
+ kmod-static-nodes.service                systemd-localed.service
+ [01;36mkmod.service[0m                             [01;34msystemd-localed.service.d[0m
+ local-fs-pre.target                      systemd-logind.service
+ local-fs.target                          systemd-machine-id-commit.service
+ [01;34mlocal-fs.target.wants[0m                    systemd-modules-load.service
+ logrotate.service                        systemd-network-generator.service
+ logrotate.timer                          systemd-networkd-wait-online.service
+ lvm2-lvmpolld.service                    systemd-networkd.service
+ lvm2-lvmpolld.socket                     systemd-networkd.socket
+ lvm2-monitor.service                     systemd-poweroff.service
+ lvm2-pvscan@.service                     systemd-pstore.service
+ [01;36mlvm2.service[0m                             systemd-quotacheck.service
+ lxd-agent.service                        systemd-random-seed.service
+ machine.slice                            systemd-reboot.service
+ man-db.service                           systemd-remount-fs.service
+ man-db.timer                             systemd-resolved.service
+ mdadm-grow-continue@.service             systemd-rfkill.service
+ mdadm-last-resort@.service               systemd-rfkill.socket
+ mdadm-last-resort@.timer                 systemd-suspend-then-hibernate.service
+ mdcheck_continue.service                 systemd-suspend.service
+ mdcheck_continue.timer                   systemd-sysctl.service
+ mdcheck_start.service                    systemd-sysext.service
+ mdcheck_start.timer                      systemd-sysusers.service
+ mdmon@.service                           systemd-time-wait-sync.service
+ mdmonitor-oneshot.service                systemd-timedated.service
+ mdmonitor-oneshot.timer                  systemd-timesyncd.service
+ mdmonitor.service                        systemd-tmpfiles-clean.service
+ modprobe@.service                        systemd-tmpfiles-clean.timer
+ motd-news.service                        systemd-tmpfiles-setup-dev.service
+ motd-news.timer                          systemd-tmpfiles-setup.service
+ multi-user.target                        systemd-udev-settle.service
+ [01;34mmulti-user.target.wants[0m                  systemd-udev-trigger.service
+ [01;36mmultipath-tools-boot.service[0m             systemd-udevd-control.socket
+ [01;36mmultipath-tools.service[0m                  systemd-udevd-kernel.socket
+ multipathd.service                       systemd-udevd.service
+ multipathd.socket                        systemd-update-utmp-runlevel.service
+ network-online.target                    systemd-update-utmp.service
+ network-pre.target                       systemd-user-sessions.service
+ network.target                           systemd-volatile-root.service
+ networkd-dispatcher.service              thermald.service
+ networking.service                       time-set.target
+ nftables.service                         time-sync.target
+ nss-lookup.target                        timers.target
+ nss-user-lookup.target                   [01;34mtimers.target.wants[0m
+ open-iscsi.service                       ua-reboot-cmds.service
+ open-vm-tools.service                    ua-timer.service
+ packagekit-offline-update.service        ua-timer.timer
+ packagekit.service                       ubuntu-advantage.service
+ paths.target                             [01;36mudev.service[0m
+ plocate-updatedb.service                 udisks2.service
+ plocate-updatedb.timer                   ufw.service
+ plymouth-halt.service                    umount.target
+ plymouth-kexec.service                   unattended-upgrades.service
+ [01;36mplymouth-log.service[0m                     update-notifier-download.service
+ plymouth-poweroff.service                update-notifier-download.timer
+ plymouth-quit-wait.service               update-notifier-motd.service
+ plymouth-quit.service                    update-notifier-motd.timer
+ plymouth-read-write.service              upower.service
+ plymouth-reboot.service                  usb-gadget.target
+ plymouth-start.service                   usb_modeswitch@.service
+ plymouth-switch-root-initramfs.service   usbmuxd.service
+ plymouth-switch-root.service             [01;34muser-.slice.d[0m
+ [01;36mplymouth.service[0m                         user-runtime-dir@.service
+ polkit.service                           user.slice
+ pollinate.service                        user@.service
+ poweroff.target                          [01;34muser@.service.d[0m
+ [01;34mpoweroff.target.wants[0m                    uuidd.service
+ printer.target                           uuidd.socket
+ proc-sys-fs-binfmt_misc.automount        veritysetup-pre.target
+ proc-sys-fs-binfmt_misc.mount            veritysetup.target
+ [01;36mprocps.service[0m                           vgauth.service
+ quotaon.service                          virtualbox-guest-utils.service
+ rc-local.service                         [01;36mx11-common.service[0m
+ [01;34mrc-local.service.d[0m                       xfs_scrub@.service
+ [01;36mrc.service[0m                               xfs_scrub_all.service
+ [01;36mrcS.service[0m                              xfs_scrub_all.timer
+ reboot.target                            xfs_scrub_fail@.service
+ [01;34mreboot.target.wants[0m
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# vi watchlog.time[K[K[K[Kservice
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"watchlog.service" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [25;1H~                                                                                         [26;1H~                                                                                         [27;1H~                                                                                         [28;1H~                                                                                         [29;1H~                                                                                         [30;1H~                                                                                         [31;1H~                                                                                         [32;1H~                                                                                         [33;1H~                                                                                         [34;1H~                                                                                         [35;1H~                                                                                         [36;1H~                                                                                         [37;1H~                                                                                         [38;1H~                                                                                         [39;1H~                                                                                         [40;1H~                                                                                         [41;1H~                                                                                         [42;1H~                                                                                         [43;1H~                                                                                         [44;1H~                                                                                         [45;1H~                                                                                         [m[46;73H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[46;1H[1m-- INSERT --[m[46;13H[K[46;73H0,1[11CAll[1;1H[?25h[?25l[35m[Unit][m
+[32mDescription[m=[31mMy watchlog service[m[2;32H[K[3;1H[K[4;1H[35m[Service][m[4;10H[K[5;1HT[5;2H[K[5;2H[?25h[?25l[32mType[m=[31moneshot[m
+[32mEnvironmentFile[m=[31m/etc/sysconfig/watchlog[m[6;40H[K[7;1HExecSta[7;8H[K[7;8H[?25h[?25l[32mExecStart[m=[31m/opt/watchlog.sh $WORD $LOG[m[8;1H[K[46;73H8[8;1H[?25h[?25l[46;1H[K[46;73H8,0-1[9CAll[8;1H[?25h[?25l[46;73H[K[46;1H:[?25hwq[?25l[?2004l[>4;m"watchlog.service" [New] 8L, 142B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# vi watchlog.service[K[K[K[K[K[K[Ktimer
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"watchlog.timer" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                         [3;1H~                                                                                         [4;1H~                                                                                         [5;1H~                                                                                         [6;1H~                                                                                         [7;1H~                                                                                         [8;1H~                                                                                         [9;1H~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [25;1H~                                                                                         [26;1H~                                                                                         [27;1H~                                                                                         [28;1H~                                                                                         [29;1H~                                                                                         [30;1H~                                                                                         [31;1H~                                                                                         [32;1H~                                                                                         [33;1H~                                                                                         [34;1H~                                                                                         [35;1H~                                                                                         [36;1H~                                                                                         [37;1H~                                                                                         [38;1H~                                                                                         [39;1H~                                                                                         [40;1H~                                                                                         [41;1H~                                                                                         [42;1H~                                                                                         [43;1H~                                                                                         [44;1H~                                                                                         [45;1H~                                                                                         [m[46;73H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[46;1H[1m-- INSERT --[m[46;13H[K[46;73H0,1[11CAll[1;1H[?25h[?25l[35m[Unit][m
+[32mDescription[m=[31mRun watchlog script every 30 sec[m[2;45H[K[2;45H[?25h[?25l[31mond[m[3;1H[K[4;1H[35m[Timer][m[4;8H[K[5;1H[34m# Run every 30 second[m[5;22H[K[6;1H[32mOnUnitActiveSec[m=[31m30[m[6;19H[K[7;1H[32mUnit[m=[31mwa[m[7;8H[K[7;8H[?25h[?25l[31mtchlog.service[m[8;1H[K[9;1H[35m[Install][m[9;10H[K[10;1H[32mWantedBy[m=[31mmulti-user.target[m[10;27H[K[11;1H[K[46;73H11,1[11;1H[?25h[?25l[46;1H[K[46;73H11,0-1[8CAll[11;1H[?25h[?25l[46;73H[K[46;1H:[?25hwq[?25l[?2004l[>4;m"watchlog.timer" [New] 11L, 166B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# systemctl start watchl;[Kog.timer
+[?2004l[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# systemctl start watchlog.timer[1P watchlog.timer[1P watchlog.timer[1P watchlog.timer[1P watchlog.timert watchlog.timero watchlog.timerp watchlog.timer
+[?2004l[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# systemctl stop watchlog.timer[1@art[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13@systemctl start[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pop[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksystemctl stop watchlog.timer[1@art[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cservice
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;46r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[46;1H"watchlog.service" 8L, 142B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[35m[106m[[m[35mUnit[m[35m[106m][m
+[32mDescription[m=[31mMy watchlog service[m[2;32H[K[3;1H[K[4;1H[35m[Service][m
+[32mType[m=[31moneshot[m
+[32mEnvironmentFile[m=[31m/etc/sysconfig/watchlog[m
+[32mExecStart[m=[31m/opt/watchlog.sh $WORD $LOG[m
+
+[94m~                                                                                         [10;1H~                                                                                         [11;1H~                                                                                         [12;1H~                                                                                         [13;1H~                                                                                         [14;1H~                                                                                         [15;1H~                                                                                         [16;1H~                                                                                         [17;1H~                                                                                         [18;1H~                                                                                         [19;1H~                                                                                         [20;1H~                                                                                         [21;1H~                                                                                         [22;1H~                                                                                         [23;1H~                                                                                         [24;1H~                                                                                         [25;1H~                                                                                         [26;1H~                                                                                         [27;1H~                                                                                         [28;1H~                                                                                         [29;1H~                                                                                         [30;1H~                                                                                         [31;1H~                                                                                         [32;1H~                                                                                         [33;1H~                                                                                         [34;1H~                                                                                         [35;1H~                                                                                         [36;1H~                                                                                         [37;1H~                                                                                         [38;1H~                                                                                         [39;1H~                                                                                         [40;1H~                                                                                         [41;1H~                                                                                         [42;1H~                                                                                         [43;1H~                                                                                         [44;1H~                                                                                         [45;1H~                                                                                         [m[46;73H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[35m[Unit][m[46;73H2[2;1H[?25h[?25l[46;73H3,0-1[3;1H[?25h[?25l
+[35m[106m[[7C][m[46;73H4,1  [4;1H[?25h[?25l[35m[[7C][m[46;73H5[5;1H[?25h[?25l[46;73H6[6;1H[?25h[?25l[46;75H2[6;2H[?25h[?25l[46;75H3[6;3H[?25h[?25l[46;75H4[6;4H[?25h[?25l[46;75H5[6;5H[?25h[?25l[46;75H6[6;6H[?25h[?25l[46;75H7[6;7H[?25h[?25l[46;75H8[6;8H[?25h[?25l[46;75H9[6;9H[?25h[?25l[46;75H10[6;10H[?25h[?25l[46;76H1[6;11H[?25h[?25l[46;76H2[6;12H[?25h[?25l[46;76H3[6;13H[?25h[?25l[46;76H4[6;14H[?25h[?25l[46;76H5[6;15H[?25h[?25l[46;76H6[6;16H[?25h[?25l[46;76H7[6;17H[?25h[?25l[46;76H8[6;18H[?25h[?25l[46;76H9[6;19H[?25h[?25l[46;75H20[6;20H[?25h[?25l[46;76H1[6;21H[?25h[?25l[46;76H2[6;22H[?25h[?25l[46;76H3[6;23H[?25h[?25l[46;76H4[6;24H[?25h[?25l[46;76H5[6;25H[?25h[?25l[46;76H6[6;26H[?25h[?25l[46;76H7[6;27H[?25h[?25l[46;76H8[6;28H[?25h[?25l[46;76H9[6;29H[?25h[?25l[46;75H30[6;30H[?25h[?25l[46;76H1[6;31H[?25h[?25l[46;76H2[6;32H[?25h[?25l[46;76H1[6;31H[?25h[?25l[46;76H0[6;30H[?25h[?25l[46;75H29[6;29H[?25h[?25l[46;75H30[6;30H[?25h[?25l[46;76H1[6;31H[?25h[?25l[46;1H[1m-- INSERT --[m[46;13H[K[46;73H6,31[10CAll[6;31H[?25h[?25l[46;76H2[6;32H[?25h[?25l[31mwatchlog[m[6;39H[K[46;76H1[6;31H[?25h[?25l[31mwatchlog[m[6;38H[K[46;76H0[6;30H[?25h[?25l[31mwatchlog[m[6;37H[K[46;75H29[6;29H[?25h[?25l[31mwatchlog[m[6;36H[K[46;76H8[6;28H[?25h[?25l[31mwatchlog[m[6;35H[K[46;76H7[6;27H[?25h[?25l[31mwatchlog[m[6;34H[K[46;76H6[6;26H[?25h[?25l[31mwatchlog[m[6;33H[K[46;76H5[6;25H[?25h[?25l[31mwatchlog[m[6;32H[K[46;76H4[6;24H[?25h[?25l[31mwatchlog[m[6;31H[K[46;76H3[6;23H[?25h[?25l[31mwatchlog[m[6;30H[K[46;76H2[6;22H[?25h[?25l[46;73H7[7;22H[?25h[?25l[31m:og.sh $WORD $LOG[m[46;76H3[7;23H[?25h[?25l[31mog.sh $WORD $LOG[m[7;38H[K[46;76H2[7;22H[?25h[?25l[46;1H[K[46;73H7,21[10CAll[7;21H[?25h[?25l[46;73H[K[46;1H:[?25hwq[?25l[?2004l[>4;m"watchlog.service" 8L, 132B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# vi watchlog.servicesystemctl stop watchlog.timer[1@art[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/m,e[K[Kessages
+[?2004ltail: cannot open '/var/log/messages' for reading: No such file or directory
+tail: no files remaining
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/messages[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo systemctl status watchlog.service 
+[?2004l[?1h=○ watchlog.service - My watchlog service[m
+     Loaded: loaded (/lib/systemd/system/watchlog.service; static)[m
+     Active: inactive (dead)[m
+TriggeredBy: [0;1;32m●[0m watchlog.timer[m
+[K[?1l>[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# sudo systemctl status watchlog.service [K[K[K[K[K[K[K[Ktimer
+[?2004l[?1h=[0;1;32m●[0m watchlog.timer - Run watchlog script every 30 second[m
+     Loaded: loaded (/lib/systemd/system/watchlog.timer; disabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (elapsed)[0m since Tue 2023-06-06 12:05:25 UTC; 39s ago[m
+    Trigger: n/a[m
+   Triggers: ● watchlog.service[m
+[m
+Jun 06 12:05:25 systemd systemd[1]: Started Run watchlog script every 30 second.[m
+[K[?1l>[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# ls /var/log//[Kwatchlog.log [1P[1P[1@t[1@a[1@i[1@l
+[?2004lsg3
+asf4
+asdfg45
+ALERT
+sadf
+sdf
+sdfg
+dfg
+dfgdfg
+
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# ls /var/log/mess[K[K[K[K
+alternatives.log            journal/                    ubuntu-advantage-timer.log
+apt/                        kern.log                    ubuntu-advantage.log
+auth.log                    landscape/                  unattended-upgrades/
+btmp                        lastlog                     watchlog.log
+dmesg                       private/                    wtmp
+dpkg.log                    syslog                      
+faillog                     sysstat/                    
+]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# ls /var/log/syslog 
+[?2004l/var/log/syslog
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail var/log/syslog
+[?2004ltail: cannot open 'var/log/syslog' for reading: No such file or directory
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail var/log/syslog[1@s[1@u[1@d[1@o[1@ 
+[?2004ltail: cannot open 'var/log/syslog' for reading: No such file or directory
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/lo/[Kg/sys
+syslog   sysstat/ 
+]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/sys
+syslog   sysstat/ 
+]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/sys
+syslog   sysstat/ 
+]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/syslog 
+[?2004lJun  6 12:50:00 ubuntu2204 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Jun  6 12:50:00 ubuntu2204 systemd[1]: Finished system activity accounting tool.
+Jun  6 12:55:01 ubuntu2204 CRON[2639]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  6 13:00:00 ubuntu2204 systemd[1]: Starting system activity accounting tool...
+Jun  6 13:00:00 ubuntu2204 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Jun  6 13:00:00 ubuntu2204 systemd[1]: Finished system activity accounting tool.
+Jun  6 13:05:01 ubuntu2204 CRON[2649]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  6 13:10:00 ubuntu2204 systemd[1]: Starting system activity accounting tool...
+Jun  6 13:10:00 ubuntu2204 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Jun  6 13:10:00 ubuntu2204 systemd[1]: Finished system activity accounting tool.
+  Jun  6 13:12:00 ubuntu2204 systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+Jun  6 13:12:01 ubuntu2204 systemd[1]: fstrim.service: Deactivated successfully.
+Jun  6 13:12:01 ubuntu2204 systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+^C
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# tail -f /var/log/syslog sudo tail var/log/syslog[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /var/log/syslog [8@tail /var/log/watchlog.[C[C[C[Csudo systemctl status watchlog.timerservice [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Ptail -f /var/log/messagessudo systemctl status watchlog.service [3Ptimer
+[?2004l[?1h=[0;1;32m●[0m watchlog.timer - Run watchlog script every 30 second[m
+     Loaded: loaded (/lib/systemd/system/watchlog.timer; disabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (elapsed)[0m since Tue 2023-06-06 12:05:25 UTC; 1h 7min ago[m
+    Trigger: n/a[m
+   Triggers: ● watchlog.service[m
+[m
+Jun 06 12:05:25 systemd systemd[1]: Started Run watchlog script every 30 second.[m
+[K[?1l>[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# sudo systemctl status watchlog.timer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Ptail -f /var/log/syslog sudo tail var/log/syslog[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /var/log/syslog [8@tail /var/log/watchlog.[C[C[C[Csudo systemctl status watchlog.timerservice [C[1P[1P[1P[1P[1@a[1@r[1@t
+[?2004l[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# sudo systemctl start watchlog.service [2Ptus watchlog.timer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Ptail -f /var/log/syslog sudo tail var/log/syslog[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /var/log/syslog [8@tail /var/log/watchlog.[C[C[C[Csudo systemctl status watchlog.timer[K[K[K[K[Kservice 
+[?2004l[?1h=○ watchlog.service - My watchlog service[m
+     Loaded: loaded (/lib/systemd/system/watchlog.service; static)[m
+     Active: inactive (dead) since Tue 2023-06-06 13:12:53 UTC; 9s ago[m
+TriggeredBy: [0;1;32m●[0m watchlog.timer[m
+    Process: 2725 ExecStart=/opt/watchlog.sh $WORD $LOG (code=exited, status=0/SUCCESS)[m
+   Main PID: 2725 (code=exited, status=0/SUCCESS)[m
+        CPU: 46ms[m
+[m
+Jun 06 13:12:53 systemd systemd[1]: Starting My watchlog service...[m
+Jun 06 13:12:53 systemd systemd[1]: watchlog.service: Deactivated successfully.[m
+Jun 06 13:12:53 systemd systemd[1]: Finished My watchlog service.[m
+[K[?1l>[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# sudo systemctl status watchlog.service [1Prt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Ptus watchlog.timer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Ptail -f /var/log/syslog 
+[?2004lJun  6 13:10:00 ubuntu2204 systemd[1]: Starting system activity accounting tool...
+Jun  6 13:10:00 ubuntu2204 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Jun  6 13:10:00 ubuntu2204 systemd[1]: Finished system activity accounting tool.
+Jun  6 13:12:00 ubuntu2204 systemd[1]: Starting Discard unused blocks on filesystems from /etc/fstab...
+Jun  6 13:12:01 ubuntu2204 systemd[1]: fstrim.service: Deactivated successfully.
+Jun  6 13:12:01 ubuntu2204 systemd[1]: Finished Discard unused blocks on filesystems from /etc/fstab.
+Jun  6 13:12:53 ubuntu2204 systemd[1]: Starting My watchlog service...
+Jun  6 13:12:53 ubuntu2204 root: date: Word found!
+Jun  6 13:12:53 ubuntu2204 systemd[1]: watchlog.service: Deactivated successfully.
+Jun  6 13:12:53 ubuntu2204 systemd[1]: Finished My watchlog service.
+^C
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# apt install eperl l-release -y && apt install spawn-fcgi  php php-cli mop[Kd_fcgid httpd -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 93%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package l-release[0m
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# apt install eperl l-release -y && apt install spawn-fcgi php php-cli mod_fcgid httpd -y[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl l-release -y && apt install spawn-fcgi p[1P[A]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-release -y && apt install spawn-fcgi ph[1P[A]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-release -y && apt install spawn-fcgi php[1P[A]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 87%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package epel-release[0m
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# apt install epel relea[K[K[K[K[K[K-release
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 83%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package epel-release[0m
+[?2004h]0;root@systemd: /lib/systemd/system[01;32mroot@systemd[00m:[01;34m/lib/systemd/system[00m# logout
+[?2004l[?2004h]0;vagrant@systemd: ~[01;32mvagrant@systemd[00m:[01;34m~[00m$ logout
+[?2004l[?2004h]0;grimfoe@grimfoe-VM: ~/Desktop/Vagrant/systemd[01;32mgrimfoe@grimfoe-VM[00m:[01;34m~/Desktop/Vagrant/systemd[00m$ ls
+[?2004lsata1.vdi  sata2.vdi  sata3.vdi  sata4.vdi  sata5.vdi  typescript  Vagrantfile
+[?2004h]0;grimfoe@grimfoe-VM: ~/Desktop/Vagrant/systemd[01;32mgrimfoe@grimfoe-VM[00m:[01;34m~/Desktop/Vagrant/systemd[00m$ ls -la
+[?2004ltotal 1290340
+drwxrwxr-x  3 grimfoe grimfoe      4096 июн  6 14:54 [0m[01;34m.[0m
+drwxr-xr-x 10 grimfoe root         4096 июн  6 12:33 [01;34m..[0m
+-rw-------  1 grimfoe grimfoe 264241152 июн  6 14:51 sata1.vdi
+-rw-------  1 grimfoe grimfoe 264241152 июн  6 14:51 sata2.vdi
+-rw-------  1 grimfoe grimfoe 264241152 июн  6 14:51 sata3.vdi
+-rw-------  1 grimfoe grimfoe 264241152 июн  6 14:51 sata4.vdi
+-
