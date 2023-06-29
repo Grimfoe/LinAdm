@@ -1,0 +1,2 @@
+Для предотвращения запуска скрипта, в случае если ещё одна копия его выполняется, необхоимо использовать следующий синтаксис Cron
+1 * * * *  /usr/bin/flock -xn /var/lock/import.lock -c 'sh /home/grimfoe/Desktop/Vagrant/Bash/email.sh'
