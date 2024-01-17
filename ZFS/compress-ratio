@@ -1,0 +1,140 @@
+root@zfs:~# zpool create pool1 /dev/sdb
+root@zfs:~# zpool create pool2 /dev/sdc
+root@zfs:~# zpool create pool3 /dev/sdd
+root@zfs:~# zpool create pool4 /dev/sde
+root@zfs:~# zpool status
+  pool: pool1
+ state: ONLINE
+ scrub: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	pool1       ONLINE       0     0     0
+	  sdb       ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: pool2
+ state: ONLINE
+ scrub: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	pool2       ONLINE       0     0     0
+	  sdc       ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: pool3
+ state: ONLINE
+ scrub: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	pool3       ONLINE       0     0     0
+	  sdd       ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: pool4
+ state: ONLINE
+ scrub: none requested
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	pool4       ONLINE       0     0     0
+	  sde       ONLINE       0     0     0
+
+errors: No known data errors
+root@zfs:~# zfs set compression=lzjb pool1
+root@zfs:~# zfs set compression=lz4 pool2
+cannot set property for 'pool2': 'compression' must be one of 'on | off | lzjb | gzip | gzip-[1-9] | zle'
+root@zfs:~# zfs set compression=gzip pool2
+root@zfs:~# zfs set compression=gzip-9 pool3
+root@zfs:~# zfs set compression=zle pool4
+root@zfs:~# zfs get all | grep compression
+pool1  compression           lzjb                   local
+pool2  compression           gzip                   local
+pool3  compression           gzip-9                 local
+pool4  compression           zle                    local
+root@zfs:~# apt install wget
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+wget is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+root@zfs:~# for i in {1..4}; do wget -P /pool$i https://gutenberg.org/cache/epub/2600/pg2600.converter.log; done
+--2023-05-25 13:49:10--  https://gutenberg.org/cache/epub/2600/pg2600.converter.log
+Resolving gutenberg.org (gutenberg.org)... 152.19.134.47, 2610:28:3090:3000:0:bad:cafe:47
+Connecting to gutenberg.org (gutenberg.org)|152.19.134.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40931771 (39M) [text/plain]
+Saving to: '/pool1/pg2600.converter.log'
+
+100%[=======================================================================>] 40,931,771  1.48MB/s   in 50s    
+
+2023-05-25 13:50:02 (799 KB/s) - '/pool1/pg2600.converter.log' saved [40931771/40931771]
+
+--2023-05-25 13:50:02--  https://gutenberg.org/cache/epub/2600/pg2600.converter.log
+Resolving gutenberg.org (gutenberg.org)... 152.19.134.47, 2610:28:3090:3000:0:bad:cafe:47
+Connecting to gutenberg.org (gutenberg.org)|152.19.134.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40931771 (39M) [text/plain]
+Saving to: '/pool2/pg2600.converter.log'
+
+100%[=======================================================================>] 40,931,771  2.65MB/s   in 20s    
+
+2023-05-25 13:50:23 (1.98 MB/s) - '/pool2/pg2600.converter.log' saved [40931771/40931771]
+
+--2023-05-25 13:50:23--  https://gutenberg.org/cache/epub/2600/pg2600.converter.log
+Resolving gutenberg.org (gutenberg.org)... 152.19.134.47, 2610:28:3090:3000:0:bad:cafe:47
+Connecting to gutenberg.org (gutenberg.org)|152.19.134.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40931771 (39M) [text/plain]
+Saving to: '/pool3/pg2600.converter.log'
+
+100%[=======================================================================>] 40,931,771  3.01MB/s   in 13s    
+
+2023-05-25 13:50:38 (2.97 MB/s) - '/pool3/pg2600.converter.log' saved [40931771/40931771]
+
+--2023-05-25 13:50:38--  https://gutenberg.org/cache/epub/2600/pg2600.converter.log
+Resolving gutenberg.org (gutenberg.org)... 152.19.134.47, 2610:28:3090:3000:0:bad:cafe:47
+Connecting to gutenberg.org (gutenberg.org)|152.19.134.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 40931771 (39M) [text/plain]
+Saving to: '/pool4/pg2600.converter.log'
+
+100%[=======================================================================>] 40,931,771  2.97MB/s   in 14s    
+
+2023-05-25 13:50:53 (2.84 MB/s) - '/pool4/pg2600.converter.log' saved [40931771/40931771]
+
+root@zfs:~# ls -l /zpool*
+ls: cannot access /zpool*: No such file or directory
+root@zfs:~# ls -l /pool*
+/pool1:
+total 20458
+-rw-r--r-- 1 root root 40931771 May  2 08:18 pg2600.converter.log
+
+/pool2:
+total 6364
+-rw-r--r-- 1 root root 40931771 May  2 08:18 pg2600.converter.log
+
+/pool3:
+total 6311
+-rw-r--r-- 1 root root 40931771 May  2 08:18 pg2600.converter.log
+
+/pool4:
+total 33190
+-rw-r--r-- 1 root root 40931771 May  2 08:18 pg2600.converter.log
+root@zfs:~# zfs list
+NAME    USED  AVAIL  REFER  MOUNTPOINT
+pool1  21.6M   450M  21.6M  /pool1
+pool2  10.9M   461M  10.8M  /pool2
+pool3  10.8M   461M  10.7M  /pool3
+pool4  39.2M   433M  39.1M  /pool4
+root@zfs:~# zfs get all | grep comressratio | grep -v ref
+root@zfs:~# zfs get all | grep compressratio | grep -v ref
+pool1  compressratio         1.81x                  -
+pool2  compressratio         3.61x                  -
+pool3  compressratio         3.65x                  -
+pool4  compressratio         1.00x               
