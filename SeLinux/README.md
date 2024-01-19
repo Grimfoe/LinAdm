@@ -25,4 +25,4 @@
       group: named
       mode: 0644
 	  
-3. Создан фаил nsupdate.commands, со списком команд для nsupdate на клиенте.
+3. Создан фаил nsupdate commands, со списком команд для nsupdate на клиенте.
